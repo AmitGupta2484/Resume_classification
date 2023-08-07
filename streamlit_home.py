@@ -8,16 +8,16 @@ Created on Tue Aug  1 16:12:17 2023
 import streamlit as st
 #import pickle
 #import base64
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #import tensorflow as tf
 #from tensorflow import keras
 #from glob import glob
-import numpy as np
+#import numpy as np
 import pandas as pd
 import docx2txt
 from win32com import client
 import os
-from docx import Document 
+#from docx import Document 
 import PyPDF2
 #import pythoncom
 #import textract
