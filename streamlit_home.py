@@ -15,7 +15,7 @@ import streamlit as st
 #import numpy as np
 import pandas as pd
 import docx2txt
-import win32com.client
+import win32com.client as win32
 import os
 #from docx import Document 
 import PyPDF2
