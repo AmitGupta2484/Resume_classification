@@ -55,9 +55,19 @@ st.title("Resume Classification Project268")
 #that reads the content of a Microsoft Word document (.doc or .docx) 
 # and returns the extracted paragraphs as a single string.
 
-def docReader(doc_file_name):
-    # Extract text from the DOCX file
-    paras = docx2txt.process(doc_file_name)
+def docReader(doc_file_name): 
+    ## 1) Initiate an object that interfaces to Word
+    word = client.Dispatch("Word.Application")
+    word.Visible = False 
+    
+    ## 2) Open the Word document to read in
+    _ = word.Documents.Open(doc_file_name)
+
+    ## 3) Extract the paragraphs and close the connections
+    doc = word.ActiveDocument
+    paras = doc.Range().text    
+    doc.Close()
+    word.Quit()
     return paras
 
 
