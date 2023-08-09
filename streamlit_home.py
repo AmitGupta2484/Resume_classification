@@ -19,7 +19,7 @@ import docx2txt
 import os
 #from docx import Document 
 import PyPDF2
-import pythoncom
+#import pythoncom
 import textract
 import spacy
 import shutil
