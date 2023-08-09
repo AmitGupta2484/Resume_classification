@@ -17,7 +17,7 @@ import pandas as pd
 import docx2txt
 #from win32com import client
 import os
-from docx import Document 
+#from docx import Document 
 import PyPDF2
 import pythoncom
 import textract
