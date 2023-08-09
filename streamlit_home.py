@@ -7,40 +7,40 @@ Created on Tue Aug  1 16:12:17 2023
 
 import streamlit as st
 #import pickle
-#import base64
+import base64
 #import matplotlib.pyplot as plt
-#import tensorflow as tf
-#from tensorflow import keras
-#from glob import glob
-#import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from glob import glob
+import numpy as np
 import pandas as pd
 import docx2txt
-##from win32com import client
+from win32com import client
 import os
-#from docx import Document 
+from docx import Document 
 import PyPDF2
-#import pythoncom
-#import textract
+import pythoncom
+import textract
 import spacy
-#import shutil
-#import json
-#import re
-#import matplotlib.pyplot as plt
-#import seaborn as sns
-#from wordcloud import WordCloud
+import shutil
+import json
+import re
+import matplotlib.pyplot as plt
+import seaborn as sns
+from wordcloud import WordCloud
 from nltk.tokenize import TweetTokenizer
 import string
 from collections import Counter
-#import string
+import string
 from nltk.tokenize import word_tokenize
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 #import sweetviz
 from sklearn.feature_extraction.text import TfidfVectorizer
-#from scipy.sparse import hstack
+from scipy.sparse import hstack
 from sklearn.preprocessing import LabelEncoder
-#from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 #from sklearn.metrics import accuracy_score,recall_score,precision_score,f1_score,roc_auc_score,confusion_matrix
 
