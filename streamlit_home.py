@@ -17,6 +17,7 @@ import pandas as pd
 import docx2txt
 #from win32com import client
 import os
+os.environ["THREADPOOLCTL_THREAD_COUNT"] = "1"
 #from docx import Document 
 import PyPDF2
 #import pythoncom
