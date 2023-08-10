@@ -21,7 +21,7 @@ os.environ["THREADPOOLCTL_THREAD_COUNT"] = "1"
 #from docx import Document 
 import PyPDF2
 #import pythoncom
-import textract
+#import textract
 import spacy
 import shutil
 import json
