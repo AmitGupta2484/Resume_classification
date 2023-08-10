@@ -59,19 +59,26 @@ st.title("Resume Classification Project268")
 # and returns the extracted paragraphs as a single string.
 
 def docReader(doc_file_name): 
-    ## 1) Initiate an object that interfaces to Word
-    word = client.Dispatch("Word.Application")
-    word.Visible = False 
+    file_type = os.path.splitext(doc_file_name)[1]
     
-    ## 2) Open the Word document to read in
-    _ = word.Documents.Open(doc_file_name)
-
-    ## 3) Extract the paragraphs and close the connections
-    doc = word.ActiveDocument
-    paras = doc.Range().text    
-    doc.Close()
-    word.Quit()
+    if file_type == '.docx':
+        doc = docx.Document(doc_file_name)
+        paras = "\n".join([paragraph.text for paragraph in doc.paragraphs])
+    elif file_type == '.doc':
+        # Use pywin32 to read .doc files
+        pythoncom.CoInitialize()
+        word = client.Dispatch("Word.Application")
+        word.Visible = False 
+        doc = word.Documents.Open(doc_file_name)
+        paras = doc.Content.Text
+        doc.Close()
+        word.Quit()
+        pythoncom.CoUninitialize()
+    else:
+        paras = None  # Handle unsupported file types
+    
     return paras
+
 
 
 
