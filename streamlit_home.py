@@ -19,7 +19,7 @@ import docx2txt
 import os
 os.environ["THREADPOOLCTL_THREAD_COUNT"] = "1"
 #from docx import Document 
-import docx
+#import docx
 import PyPDF2
 import pythoncom
 import spacy
