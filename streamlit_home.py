@@ -30,11 +30,13 @@ import re
 #import seaborn as sns
 #from wordcloud import WordCloud
 from nltk.tokenize import TweetTokenizer
-import string
+#import string
 from collections import Counter
-import string
-from nltk.tokenize import word_tokenize
+#import string
 import nltk
+nltk.download('punkt', download_dir='nltk_data')
+nltk.data.path.append('nltk_data')
+from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 #import sweetviz
