@@ -26,9 +26,9 @@ import spacy
 import shutil
 import json
 import re
-import matplotlib.pyplot as plt
-import seaborn as sns
-from wordcloud import WordCloud
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#from wordcloud import WordCloud
 from nltk.tokenize import TweetTokenizer
 import string
 from collections import Counter
@@ -39,9 +39,9 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 #import sweetviz
 from sklearn.feature_extraction.text import TfidfVectorizer
-from scipy.sparse import hstack
+#from scipy.sparse import hstack
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 #from sklearn.metrics import accuracy_score,recall_score,precision_score,f1_score,roc_auc_score,confusion_matrix
 
